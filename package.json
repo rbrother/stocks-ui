@@ -1,0 +1,31 @@
+{
+  "name": "stocks-ui",
+  "version": "1.0.0",
+  "description": "Finnish Stock Market Monitoring SPA",
+  "main": "index.js",
+  "scripts": {
+    "dev": "shadow-cljs watch app",
+    "build": "shadow-cljs release app",
+    "serve": "shadow-cljs server"
+  },
+  "dependencies": {
+    "chart.js": "^4.4.0",
+    "chartjs-adapter-date-fns": "^3.0.0",
+    "date-fns": "^2.30.0",
+    "highlight.js": "11.1.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "shadow-cljs": "^2.25.10"
+  },
+  "keywords": [
+    "clojurescript",
+    "re-frame",
+    "stocks",
+    "finnish",
+    "hex"
+  ],
+  "author": "",
+  "license": "MIT"
+}
