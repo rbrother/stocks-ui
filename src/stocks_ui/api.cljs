@@ -190,12 +190,10 @@
                   (js/console.log "Received response for" symbol ":" response)
                   (try
                     ;; allorigins returns data in 'contents' field as string
-                    (let [contents (:contents response)]
-                      (js/console.log "Response contents:" contents)
+                    (let [contents (:contents response)]                      
                       (if (and contents (not= contents ""))
                         (let [parsed-data (js/JSON.parse contents)
-                              clj-data (js->clj parsed-data :keywordize-keys true)]
-                          (js/console.log "Parsed data:" clj-data)
+                              clj-data (js->clj parsed-data :keywordize-keys true)]                          
                           (if-let [quote-data (parse-quote-response clj-data)]
                             (do
                               (js/console.log "Successfully parsed quote data for" symbol)
