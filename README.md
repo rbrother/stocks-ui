@@ -30,16 +30,16 @@ The application includes 15 major Finnish stocks from the HEX exchange:
 - **SAMPO.HE** - Sampo Oyj (Financial Services)
 - **UPM.HE** - UPM-Kymmene Oyj (Materials)
 - **FORTUM.HE** - Fortum Oyj (Utilities)
-- **STORA.HE** - Stora Enso Oyj (Materials)
-- **KESKO.HE** - Kesko Oyj (Consumer Discretionary)
-- **METSO.HE** - Metso Outotec Oyj (Industrials)
+- **STERV.HE** - Stora Enso Oyj (Materials)
+- **KESKOB.HE** - Kesko Oyj (Consumer Discretionary)
+- **MOCORP.HE** - Metso Oyj (Industrials)
 - **ELISA.HE** - Elisa Oyj (Communication Services)
 - **TELIA1.HE** - Telia Company AB (Communication Services)
-- **NORDEA.HE** - Nordea Bank Abp (Financial Services)
-- **ORION.HE** - Orion Oyj (Healthcare)
+- **NDA-FI.HE** - Nordea Bank Abp (Financial Services)
+- **ORNBV.HE** - Orion Oyj (Healthcare)
 - **KOJAMO.HE** - Kojamo Oyj (Real Estate)
-- **KONE.HE** - KONE Oyj (Industrials)
-- **WARTSILA.HE** - Wärtsilä Oyj (Industrials)
+- **KNEBV.HE** - KONE Oyj (Industrials)
+- **WRT1V.HE** - Wärtsilä Oyj (Industrials)
 
 ## Getting Started
 

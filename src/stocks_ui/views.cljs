@@ -25,15 +25,14 @@
   (let [selected? @(rf/subscribe [::subs/stock-selected? (:symbol stock)])]
     [:div.stock-item
      {:class (when selected? "selected")
+      :title (:symbol stock)
       :on-click #(rf/dispatch [::events/select-stock (:symbol stock)])}
-     [:div.stock-symbol (:symbol stock)]
-     [:div.stock-name (:name stock)]
-     [:div.stock-sector (:sector stock)]]))
+     [:div.stock-name (:name stock)]]))
 
 (defn stock-selector []
   (let [filtered-stocks @(rf/subscribe [::subs/filtered-stocks])]
-    [:div.stock-selector
-     [:h2 "Select Stocks to Monitor"]
+    [:aside.stock-selector
+     [:h2 "Stocks"]
      [search-input]
      [:div.stock-list
       (for [stock filtered-stocks]
@@ -173,8 +172,9 @@
    [error-display]
    [loading-indicator]
    [:div.container
-    [stock-selector]
-    [dashboard]]
+    [:div.main-layout
+     [stock-selector]
+     [dashboard]]]
 
    ;; Initialize data fetching when component mounts
    [:script {:dangerouslySetInnerHTML
